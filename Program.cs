@@ -38,8 +38,8 @@ builder.Services.AddScoped<ExerciseService>();
 builder.Services.AddScoped<PlanService>();
 builder.Services.AddScoped<UserService>();
 
-builder.Services.AddSingleton<PasswordHasher>();
-builder.Services.AddSingleton<JwtService>();
+builder.Services.AddTransient<PasswordHasher>();
+builder.Services.AddTransient<JwtService>();
 
 
 builder.Services.AddProblemDetails();
